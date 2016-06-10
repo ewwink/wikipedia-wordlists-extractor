@@ -31,7 +31,7 @@ fi
 split -l 300000 $XMLFILE wikitmp/wiki_
 echo ""
 
-echo "Removing non AlphaNumeric Chacracter"
+echo "Removing non AlphaNumeric Character"
 cd wikitmp
 perl -pi -e 's/[\W_$\[\]]+/\n/g' wiki_*
 rm wiki_*.bak
