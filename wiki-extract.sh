@@ -48,7 +48,7 @@ rm wiki_*.bak
 echo ""
 
 echo "Merging and Sorting Word lists"
-sort -u -S 30% wiki_* > $FILERESULT
+LC_ALL=C sort -u -S 30% wiki_* > $FILERESULT
 mv $FILERESULT ../$FILERESULT
 cd ..
 echo ""
